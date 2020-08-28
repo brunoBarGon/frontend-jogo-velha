@@ -14,52 +14,54 @@ html, body{
     background-color: var(--color-background);
     color: var(--color-font-white);
     overflow: hidden;
+    font-size: 62.5%;
 }
 
 .container{
     display: grid;
-    grid-template-rows: calc(29vh - 30px) 22vh 22vh 22vh 5vh;
+    grid-template-rows: calc(29vh - 3rem) 22vh 22vh 22vh 5vh;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-areas: "j  j bt"
+    grid-template-areas: "j  j  bt"
                          "m1 m2 m3"
                          "m4 m5 m6"
                          "m7 m8 m9"
                          "f  f  f";
-    margin-left: 250px;
-    margin-right: 250px;
-    grid-gap: 5px;                                        
+    max-width: 100rem;
+    margin: 0 auto;
+    grid-gap: 0.5rem;
+
 }
+
 .jogador{
     grid-area: j;
-    font: 400 18px Play;
+    font: 400 1.8rem Play;
 }
 
 #usuario-x, #usuario-o{
     width: 30vw;
-    height: 30px;
+    height: 3rem;
     border: 2px solid var(--color-primary);
     background-color: var(--color-background);
     color: var(--color-font-white);
     display: block;
     margin-top: 10px;
-    font: 400 16px Play;
+    font: 400 1.6rem Play;
 }
 
-div .btn-jogar{
-
+.btn-jogar{
     grid-area: bt;
 }
 
 #jogar{
-    width: 22vw;
-    height: 100px;
+    width: 25vw;
+    height: 12rem;
     background-color: var(--color-primary);
     color: var(--color-font-white);
-    font: 700 18px Play;
-    margin-top: 25px; 
+    font: 700 1.8rem Play;
+    margin-top: 2rem; 
 }
 
-div #jogar:hover{
+#jogar:hover{
     background-color: var(--color-secondary);
     cursor: pointer;
 }
@@ -68,39 +70,39 @@ div #jogar:hover{
     outline: none;
 }
 
-div .main-1{
+.main-1{
     grid-area: m1;
 }
 
-div .main-2{
+.main-2{
     grid-area: m2;
 }
 
-div .main-3{
+.main-3{
     grid-area: m3;
 }
 
-div .main-4{
+.main-4{
     grid-area: m4;
 }
 
-div .main-5{
+.main-5{
     grid-area: m5;
 }
 
-div .main-6{
+.main-6{
     grid-area: m6;
 }
 
-div .main-7{
+.main-7{
     grid-area: m7;
 }
 
-div .main-8{
+.main-8{
     grid-area: m8;
 }
 
-div .main-9{
+.main-9{
     grid-area: m9;
 }
 .efeito{
@@ -111,12 +113,12 @@ div .main-9{
     background-color: var(--color-secondary);
 }
 
-div .footer{
+.footer{
     grid-area: f;
     text-align: center;
 }
 
 .footer p{
     color: var(--color-font-white);
-    font: 400 16px Play;
+    font: 400 1.6rem Play;
 }
